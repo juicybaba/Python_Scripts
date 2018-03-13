@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-###Test code 
+###Test code  
 ###r = requests.get("http://www.ireadweek.com/index.php/index/"+ "1" +".html")
 ###c = r.content
 ###soup = BeautifulSoup(c,"html.parser")
