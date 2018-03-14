@@ -26,7 +26,7 @@ while(MinimumItem > 65):
     soup = BeautifulSoup(c,"html.parser")
     all = soup.find_all("li")
     
-    if len(all) >= MinimumItem:   # All pages except last page
+    if len(all) >= MinimumItem:   # All pages except last page   
         print("This is page " + str(Currentpage) + ". This page has " + str(len(all)) + " items.")
         Currentpage += 1
         for item in all[9:59]:
