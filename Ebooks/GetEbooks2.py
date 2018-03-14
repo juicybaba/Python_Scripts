@@ -7,7 +7,7 @@ l = []
 Currentpage = 1 
 MinimumItem = 51
 
-###Test code    1111
+###Test code    1111 
 #r = requests.get("http://www.ireadweek.com/index.php/index/"+ "196" +".html")
 #c = r.content
 #soup = BeautifulSoup(c,"html.parser")
