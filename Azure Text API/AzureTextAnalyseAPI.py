@@ -32,11 +32,13 @@ key_phrase_api_url = text_analytics_base_url + "keyPhrases"
 #Copy Source sheet from source to new file
 
 for row_index in range(ScrSheet.nrows):
-         for col_index in range(ScrSheet.ncols):
+        print(row_index/ScrSheet.nrows)
+        for col_index in range(ScrSheet.ncols):
             DestSheet.write(row_index, col_index, ScrSheet.cell(row_index, col_index).value)
-            print(row_index/ScrSheet.ncols)
+            
             #Prepare data and send data (column "text" only) to Azure for analysation(sentiment and key phrase) 
             if (row_index > 0) & (col_index == 5):
+                
                 AzureData1 = []
                 AzureData2 = []
                 
